@@ -1,0 +1,13 @@
+query CompanyQuery {
+    company {
+        ceo,
+        coo,
+        cto,
+        name,
+        headquarters {
+            city,
+            state
+        },
+        summary
+    }
+}

@@ -1,0 +1,7 @@
+query UserQuery {
+    users {
+        id,
+        name,
+        rocket
+    }
+}

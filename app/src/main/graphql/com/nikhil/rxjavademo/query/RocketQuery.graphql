@@ -1,0 +1,25 @@
+query RocketQuery  {
+    rocketsResult {
+        data {
+            company,
+            name,
+            active,
+            description,
+            payload_weights {
+                name,
+                kg
+            },
+            country,
+            success_rate_pct,
+            wikipedia,
+            height {
+                meters
+            },
+            diameter {
+                meters
+            }
+        },result {
+            totalCount
+        }
+    }
+}

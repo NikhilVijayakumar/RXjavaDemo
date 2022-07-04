@@ -1,0 +1,12 @@
+query MissionResultQuery {
+    missionsResult {
+        data {
+            id
+            name,
+            manufacturers
+        }
+        result {
+            totalCount
+        }
+    }
+}

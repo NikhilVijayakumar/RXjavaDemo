@@ -1,0 +1,16 @@
+query HistoryQuery {
+    histories {
+        details,
+        id,
+        title,
+        flight {
+            id,
+            mission_id,
+            mission_name
+        },
+        links {
+            article,
+            wikipedia
+        }
+    }
+}

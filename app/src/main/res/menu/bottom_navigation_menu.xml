@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/historyFragment"
+        android:enabled="true"
+        android:icon="@drawable/history"
+        android:title="@string/history"/>
+    <item
+        android:id="@+id/missionFragment"
+        android:enabled="true"
+        android:icon="@drawable/mission"
+        android:title="@string/mission"/>
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/office"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/rocketFragment"
+        android:enabled="true"
+        android:icon="@drawable/rocket"
+        android:title="@string/rocket"/>
+
+
+    <item
+        android:id="@+id/usersFragment"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="@string/user"/>
+</menu>
