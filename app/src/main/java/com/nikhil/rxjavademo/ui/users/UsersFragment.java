@@ -8,16 +8,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.nikhil.rxjavademo.R;
 import com.nikhil.rxjavademo.databinding.FragmentHistoryBinding;
 import com.nikhil.rxjavademo.databinding.FragmentUsersBinding;
 import com.nikhil.rxjavademo.ui.base.BaseFragment;
+import com.nikhil.rxjavademo.ui.mission.MissionViewModel;
 
 
 public class UsersFragment extends BaseFragment {
 
     private FragmentUsersBinding binding;
+    private UsersViewModel viewModel;
 
     public UsersFragment() {
         // Required empty public constructor
@@ -35,5 +38,6 @@ public class UsersFragment extends BaseFragment {
         showToolbar();
         showBottomNavigation();
         hideBackButton();
+        viewModel = new ViewModelProvider(this).get(UsersViewModel.class);
     }
 }

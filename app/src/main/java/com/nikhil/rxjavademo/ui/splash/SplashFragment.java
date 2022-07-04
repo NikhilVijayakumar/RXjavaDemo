@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.nikhil.rxjavademo.R;
@@ -18,7 +19,7 @@ import com.nikhil.rxjavademo.ui.base.BaseFragment;
 public class SplashFragment extends BaseFragment {
 
     private FragmentSplashBinding binding;
-
+    private  SplashViewModel viewModel;
     public SplashFragment() {
         // Required empty public constructor
     }
@@ -35,7 +36,9 @@ public class SplashFragment extends BaseFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         hideToolbar();
         hideBottomNavigation();
+        viewModel = new ViewModelProvider(this).get(SplashViewModel.class);
         gotoHome(view);
+
 
     }
 

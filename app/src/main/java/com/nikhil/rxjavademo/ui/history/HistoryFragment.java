@@ -8,15 +8,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.nikhil.rxjavademo.R;
 import com.nikhil.rxjavademo.databinding.FragmentHistoryBinding;
 import com.nikhil.rxjavademo.ui.base.BaseFragment;
+import com.nikhil.rxjavademo.ui.splash.SplashViewModel;
 
 
 public class HistoryFragment extends BaseFragment {
 
     private FragmentHistoryBinding binding;
+    private HistoryViewModel viewModel;
     public HistoryFragment() {
         // Required empty public constructor
     }
@@ -33,5 +36,6 @@ public class HistoryFragment extends BaseFragment {
         showToolbar();
         showBottomNavigation();
         hideBackButton();
+        viewModel = new ViewModelProvider(this).get(HistoryViewModel.class);
     }
 }
